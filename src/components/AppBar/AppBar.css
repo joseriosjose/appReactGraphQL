@@ -1,0 +1,23 @@
+.AppBarFondo {
+    background-color: rgba(52, 50, 50, 0.1);
+}
+
+.AppBarLogo {
+    width: 60%;
+    margin-left: 90px;
+    margin-bottom: 20px;
+}
+
+.menu-main {
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+}
+
+.menu-main a {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: url(../../assets/img/cursos_custom.png), auto;
+}
