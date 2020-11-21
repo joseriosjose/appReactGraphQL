@@ -1,44 +1,43 @@
-.body-css {
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+ .imagen {
+     width: 65%;
+     width: 50%;
+     position: absolute;
+     bottom: 0;
+     right: 0;
+     margin-bottom: 20px;
+ }
 
-.imagen {
-    width: 65%;
-    width: 50%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin-bottom: 20px;
-}
+ @font-face {
+     font-family: 'Myfont';
+     src: local('Segoe UI Light'), local('SegoeUI-Light');
+ }
 
-@font-face {
-    font-family: 'Myfont';
-    src: local('Segoe UI Light'), local('SegoeUI-Light');
-}
+ .text-home {
+     color: #F8F6F6;
+     font-family: 'Myfont';
+     text-decoration: none;
+     font-weight: initial;
+     letter-spacing: 3px;
+     margin-left: 8%;
+ }
 
-.text-home {
-    color: #F8F6F6;
-    font-family: 'Myfont';
-    text-decoration: none;
-    font-weight: initial;
-    letter-spacing: 3px;
-    margin-left: 8%;
-}
+ h1 {
+     margin-top: 7%;
+ }
 
-h1 {
-    margin-top: 7%;
-}
+ .division {
+     height: 4px;
+     width: 33%;
+     background-color: #ffffff;
+     margin-left: 8%;
+ }
 
-.division {
-    height: 4px;
-    width: 33%;
-    background-color: #ffffff;
-    margin-left: 8%;
-}
+ .div_sociales {
+     margin-left: 7%;
+     margin-top: 2.5%;
+ }
 
-.div_sociales {
-    margin-left: 7%;
-    margin-top: 2.5%;
-}
+ .base_fondo {
+     height: 100%;
+     background-image: radial-gradient( ellipse at bottom right, #099F09, #252525 45%);
+ }

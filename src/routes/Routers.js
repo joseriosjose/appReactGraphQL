@@ -6,6 +6,7 @@ import {
 } from "react-router-dom"
 import Home from '../views/Home/Home'
 import Characters from '../views/Characters/Characters'
+import NotFound from "../views/NotFound/NotFound"
 
 export default function Routers(prop) {
 
@@ -19,7 +20,7 @@ export default function Routers(prop) {
                     <Characters />
                 </Route>
                 <Route path="*">
-                    404
+                    <NotFound />
                 </Route>
             </Switch>
         </Router>

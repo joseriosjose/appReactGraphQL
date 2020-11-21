@@ -12,44 +12,47 @@ import { ReactComponent as IconGithub } from "../../assets/img/github.svg";
 export default function Home() {
     return (
         <React.Fragment >
-            <AppBar />
-            <h1 className="text-home">Web creada utilizando <br />
+            <div className="base_fondo">
+
+                <AppBar />
+                <h1 className="text-home">Web creada utilizando <br />
                 api de Rick & Morty,<br />
                 GraphQl y React.
                 </h1>
-            <hr className="division" />
-            <h1 className="text-home">
-                Jose JR
+                <hr className="division" />
+                <h1 className="text-home">
+                    Jose JR
                 </h1>
-            <h3 className="text-home">
-                Follow Me
+                <h3 className="text-home">
+                    Follow Me
                 </h3>
 
-            <div className="div_sociales">
-                <LinkSocial to="https://www.facebook.com/JoseRiosJose1/"
-                    color="#ffffff" >
-                    <IconFacebook />
-                </LinkSocial>
-                <LinkSocial to="https://www.instagram.com/srte__jjr/"
-                    color="#ffffff" >
-                    <IconInstagram />
-                </LinkSocial>
-                <LinkSocial to="https://twitter.com/Jose_Jose_Ri"
-                    color="#ffffff" >
-                    <IconTwitter />
-                </LinkSocial>
-                <LinkSocial to="https://www.linkedin.com/in/joseriosjose3/"
-                    color="#ffffff" >
-                    <IconLinkedin />
-                </LinkSocial>
-                <LinkSocial to="https://github.com/joseriosjose"
-                    color="#ffffff" >
-                    <IconGithub />
-                </LinkSocial>
+                <div className="div_sociales">
+                    <LinkSocial to="https://www.facebook.com/JoseRiosJose1/"
+                        color="#ffffff" >
+                        <IconFacebook />
+                    </LinkSocial>
+                    <LinkSocial to="https://www.instagram.com/srte__jjr/"
+                        color="#ffffff" >
+                        <IconInstagram />
+                    </LinkSocial>
+                    <LinkSocial to="https://twitter.com/Jose_Jose_Ri"
+                        color="#ffffff" >
+                        <IconTwitter />
+                    </LinkSocial>
+                    <LinkSocial to="https://www.linkedin.com/in/joseriosjose3/"
+                        color="#ffffff" >
+                        <IconLinkedin />
+                    </LinkSocial>
+                    <LinkSocial to="https://github.com/joseriosjose"
+                        color="#ffffff" >
+                        <IconGithub />
+                    </LinkSocial>
+                </div>
+
+                <img src={Fondo} alt="imagen de fondo" className="imagen" />
+
             </div>
-
-            <img src={Fondo} alt="imagen de fondo" className="imagen" />
-
         </React.Fragment>
     )
 }
