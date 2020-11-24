@@ -36,7 +36,7 @@ canvas {
 }
 
 .h1_notfound {
-    font-weight: initial;
+    font-weight: 600;
     letter-spacing: 3px;
     font-size: 200px;
     color: #F8F6F6;
@@ -52,4 +52,60 @@ canvas {
     font-family: 'Myfont';
     font-size: 45px;
     margin-top: 5px;
+}
+
+.gatos {
+    width: 150px;
+    position: absolute;
+    z-index: 3;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.imgr {
+    -webkit-animation: 27s rotate linear infinite;
+    animation: 27s rotate linear infinite;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+#imgr2 {
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+body {
+    margin: 0;
+}
+
+.x {
+    animation: x 13s linear infinite alternate;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.y {
+    animation: y 7s linear infinite alternate;
+    width: 100px;
+    height: 100px;
+}
+
+@keyframes x {
+    100% {
+        transform: translateX( calc(100vw - 100px));
+    }
+}
+
+@keyframes y {
+    100% {
+        transform: translateY( calc(100vh - 100px));
+    }
 }

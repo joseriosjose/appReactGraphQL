@@ -2,6 +2,12 @@ import React from 'react'
 import './NotFound.css'
 import Particles from 'react-particles-js';
 import LogoRick from '../../assets/img/logorickandmorty.png'
+import Gato1 from '../../assets/img/gatos/gatos.png'
+import Gato2 from '../../assets/img/gatos/gatos2.png'
+import Gato3 from '../../assets/img/gatos/gatos3.png'
+import Gato4 from '../../assets/img/gatos/gatos4.png'
+import Gato5 from '../../assets/img/gatos/gatos5.png'
+import Gato6 from '../../assets/img/gatos/gatos6.png'
 
 export default function NotFound() {
 
@@ -116,15 +122,91 @@ export default function NotFound() {
         "retina_detect": true
     }
 
+    const params =
+    {
+        "particles": {
+            "number": {
+                "value": 8,
+                "density": {
+                    "enable": true,
+                    "value_area": 800
+                }
+            },
+            "line_linked": {
+                "enable": false
+            },
+            "move": {
+                "speed": 1,
+                "out_mode": "out"
+            },
+            "shape": {
+                "type": [
+                    "image",
+                    "circle"
+                ],
+                "image": [
+                    {
+                        "src": Gato1,
+                        "height": 20,
+                        "width": 23
+                    },
+                    {
+                        "src": Gato2,
+                        "height": 20,
+                        "width": 20
+                    },
+                    {
+                        "src": Gato3,
+                        "height": 20,
+                        "width": 20
+                    }
+                ]
+            },
+            "color": {
+                "value": "#CCC"
+            },
+            "size": {
+                "value": 30,
+                "random": false,
+                "anim": {
+                    "enable": true,
+                    "speed": 4,
+                    "size_min": 10,
+                    "sync": false
+                }
+            }
+        },
+        "retina_detect": false
+    }
+
+
+
+
+    const drawcats = () => {
+        /*
+                <img src={Gato2} alt="gato dos" className="gatos" />
+                <img src={Gato3} alt="gato tres" className="gatos" />
+                <img src={Gato4} alt="gato cuatro" className="gatos" />
+                <img src={Gato5} alt="gato cinco" className="gatos" />
+                <img src={Gato6} alt="gato seis" className="gatos" />*/
+    }
+
+
     return (
-        <div >
+        <>
+            <div className="x">
+                <div className="y">
+                    <img src={Gato1} alt="gato uno" className="gatos imgr " />
+                </div>
+            </div>
+
             <div className="div_centrado">
                 <img src={LogoRick} alt="logotipo" className='logo_notfound' />
                 <h1 className="h1_notfound">404</h1>
                 <h3 className="h3_notfound">Pagina no encontrada</h3>
 
             </div>
-            <Particles params={parametros}></Particles>
-        </div>
+            <Particles params={parametros} />
+        </>
     )
 }
